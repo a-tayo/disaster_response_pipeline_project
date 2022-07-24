@@ -1,6 +1,16 @@
 # Disaster Response Pipeline Project
 
-# Installation
+
+## Table of Contents
+1. <a href=#instl>Libraries<a>
+2. <a href=#inst>Setup<a>
+3. <a href=#motv>Project Motivation<a>
+4. <a href=#projd>Project Description<a>
+5. <a href=#filesd>Files Description<a>
+6. <a href=#eval>Evaluation Report<a>
+7. <a href=#acc>Accuracy Score<a>
+
+## Installation<span id='instl'>
 The downloaded libraries used in this project are
 ```
 Flask==2.1.3
@@ -13,7 +23,7 @@ scikit-learn==1.1.1
 SQLAlchemy==1.4.39
 ```
 All other libraries are available in the Anaconda Distribution of python
-### Instructions:
+## Instructions:<span id='inst'>
 1. Run the following commands in the project's root directory to set up your  environment, database and model.
 
     - Create a python virtual environment with conda
@@ -32,13 +42,15 @@ All other libraries are available in the Anaconda Distribution of python
 
 3. Go to http://0.0.0.0:3001/
 
-# Project Motivation
+## Project Motivation<span id='motv'>
 ### Problem:
-    - Disaster response teams finds it difficult to filter out the relevant information from all the communications received following a disaster.
+    - Disaster response teams finds it difficult to filter out the relevant information 
+      from all the communications received following a disaster.
 ### Solution: 
-    - Machine learning model connected to a web app to categorise messages and filter out the relevant ones.
+    - Machine learning model connected to a web app to categorise messages and 
+      filter out the relevant ones.
 
-# Project Description
+## Project Description<span id='projd'>
 This project is based on the dataset curated by [Appen](https://appen.com)(formerly known as figure eight) and provided by Udacity. The project is divided into three main parts
 
   1. ETL(Extract Transform Load):
@@ -55,7 +67,7 @@ This project is based on the dataset curated by [Appen](https://appen.com)(forme
         - Outputs list and higlights the predicted category of the input message.
         - Shows a visualization of the original dataset values.
   
-# Files Description
+## Files Description<span id='filesd'>
 The files and folders in this project is as structured below
    - app
    | - template
@@ -75,7 +87,7 @@ The files and folders in this project is as structured below
 
    - README.md
 
-# Evaluation Report
+## Evaluation Report <span id='eval'>
 Classification report for each category prediction
  ```
         Feature 1: related 
@@ -473,5 +485,5 @@ Classification report for each category prediction
         weighted avg       0.86      0.86      0.84      5206
 ```
 
-# Model Accuracy 
+# Model Accuracy<span id='acc'> 
    - Accuracy: 0.9458477397874248
