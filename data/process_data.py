@@ -83,11 +83,14 @@ def save_data(df, database_filename):
     database_filename:
         filename to save the data in"
     """
-    engine = create_engine(f'sqlite:///{database_filename}')
-    df.to_sql(database_filename, engine, index=False)
+    engine = create_engine(f"sqlite:///{database_filename}")
+    df.to_sql('disaster_messages', engine, index=False)
 
 
 def main():
+    """
+    Application entry point runs all the implemented logic
+    """
     if len(sys.argv) == 4:
 
         messages_filepath, categories_filepath, database_filepath = sys.argv[1:]
